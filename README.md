@@ -1,4 +1,6 @@
 # My PHP Base
+
+<body style="width: 100% !important;">
 Base to my projects utilizing PHP
 <br><br>
 
@@ -12,7 +14,7 @@ The routesList file have the follow array structure to register and specify your
      
      See the example bellow:
 
-<code>
+<div style="background-color: black; color:white;">
 [
      '/home' => [
           'class' => classController::class,
@@ -20,7 +22,7 @@ The routesList file have the follow array structure to register and specify your
           'access' => 'public'
      ]
 ]
-</code>
+</div>
 
 <br><br>
 
@@ -31,3 +33,4 @@ The views files is inside on the path '/views', you can create your own structur
 
 <h4> Controllers </h4>
 The Controllers are in the path '/controllers', it is responsable to return to route system the informations about views or other processings.
+</body>
