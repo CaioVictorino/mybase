@@ -1,38 +1,78 @@
-<?php require_once __DIR__.'/../snippets/header.php'; ?>
+<? require_once VIEW . 'snippets/header.php'; ?>
 
-<?php require_once __DIR__.'/../snippets/topbar.php'; ?>
+<body class="sidebar-mini sidebar-collapse">
 
-<?php require_once __DIR__.'/../snippets/sidebar.php'; ?>
+     <? require_once __DIR__ . '/../snippets/topbar.php'; ?>
+     <? require_once __DIR__ . '/../snippets/sidebar.php'; ?>
 
 
-<div class="content-wrapper">
-     <div class="row">
-          <div class="col-md-12">
-               <h3 style="color: #1F3543; font-family: 'Montserrat', sans-serif; font-weight: 700; ">Alunos</h3>
+     <div class="content-wrapper">
+
+
+          <div class="row">
+               <div class="col-md-12 pTitle">
+                    Clientes
+               </div>
           </div>
-          <div class="col-md-12">
-               <div class="card">
-                    <div class="card-header" id="hInscritosAnalise">
-                         Database View - Alunos
-                    </div>
-                    <div class="card-body">
-                         <div class="row">
-                              <!-- Button trigger modal -->
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cadastrarAluno">
-                                   Cadastrar Aluno
-                              </button>
+
+          <div class="row">
+               <div class="col-md-12">
+                    <div class="card">
+                         <div class="card-header">
+                              Tabela Clientes
+                         </div>
+                         <div class="card-body">
+                              <div class="row mb-3">
+                                   <div class="col-md-12">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-register" data-toggle="modal" data-target="#costumerRegister">
+                                             Cadastrar Cliente
+                                        </button>
+                                   </div>
+                              </div>
+                              <div class="row">
+                                   <div class="col-md-12">
+                                        <table class="table table-dark">
+                                             <thead>
+                                                  <th>Nome</th>
+                                                  <th>CPF/CNPJ</th>
+                                                  <th><center>Ações</center></th>
+                                             </thead>
+                                             <tbody>
+                                                  <tr>
+                                                       <td>1</td>
+                                                       <td>2</td>
+                                                       <td>
+                                                            <center>
+                                                            <div class="btn-group">
+                                                                 <button type="button" class="btn btn-info">
+                                                                      <i class="fa-solid fa-user-pen"></i>
+                                                                 </button>
+                                                                 <button type="button" class="btn btn-danger">
+                                                                      <i class="fa-solid fa-circle-xmark"></i>
+                                                                 </button>
+                                                            </div>
+                                                            </center>
+                                                       </td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </div>
+                              </div>
                          </div>
                     </div>
                </div>
           </div>
-     </div>
-</div>
 
-<!-- Modal -->
-<div class="modal fade" id="cadastrarAluno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+     </div>
+
+
+     <!-- Modal -->
+<div class="modal fade" id="costumerRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header pTitle">
         <h5 class="modal-title" id="exampleModalLabel">Cadastrar Aluno</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -134,5 +174,8 @@
   </div>
 </div>
 
-<script src="./../public/assets/js/viacep.js"></script>
-<?php require_once __DIR__.'/../snippets/footer.php'; ?>
+<script src="/assets/js/viacep.js"></script>
+
+
+     <? require_once VIEW . '/snippets/footer.php'; ?>
+</body>

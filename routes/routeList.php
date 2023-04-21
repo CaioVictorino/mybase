@@ -5,6 +5,7 @@ namespace Routes;
 /* CONTROLLERS LIST */
 use Controllers\homeController;
 use Controllers\adminController;
+use Controllers\costumerController;
 
 
 class routeList{
@@ -19,6 +20,11 @@ class routeList{
                ],
                "/admin" => [
                     "class" => adminController::class,
+                    "method" => "index",
+                    "access" => "admin"
+               ],
+               "/admin/cliente" => [
+                    "class" => costumerController::class,
                     "method" => "index",
                     "access" => "admin"
                ]

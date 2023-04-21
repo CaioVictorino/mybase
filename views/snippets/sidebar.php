@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
   <div href="https://www.globo.com" class="brand-link" target="_blank">
-    <img src="storage/images/iconsidebar.png" alt="VAG Especialista" class="brand-img">
+    <img src="/storage/images/iconsidebar.png" alt="VAG Especialista" class="brand-img">
   </div>
 
   <div class="sidebar">
@@ -37,7 +37,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="/admin/relatorios" class="nav-link">
+            <a href="/admin/cliente" class="nav-link">
               <i class="fa-solid fa-users-gear sb-icon"></i>
               <p>
                 Clientes

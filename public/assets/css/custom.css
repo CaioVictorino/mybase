@@ -10,6 +10,7 @@
 
 html > * {
      font-family: 'Prompt', sans-serif !important;
+     min-width: 360px !important;
 }
 
 .main-sidebar{
@@ -52,14 +53,14 @@ html > * {
      white-space: inherit;
      text-overflow: ellipsis !important;
      font-size: 100%;
-     font-weight: 600;
+     font-weight: 500;
      position: relative;
 }
 
 
 .nav-item .nav-link{
      color: #1F3544 !important;
-     font-weight: 600 !important;
+     font-weight: 500 !important;
 }
 
 .sb-icon{
@@ -119,14 +120,6 @@ a i {
      background-repeat: no-repeat;
 }
 
-#hInscritosAnalise{
-     background-color: #1F3544 !important;
-     color: white !important;
-     font-weight: 700;
-     font-family: 'Montserrat', sans-serif;
-
-}
-
 .card-body{
      background-color: #FDFDFD !important;
      font-family: 'Montserrat', sans-serif;
@@ -134,7 +127,6 @@ a i {
 
 .labels{
      color: #1F3544;
-     font-size: 0.8em;
      word-wrap: break-word;
 }
 
@@ -153,3 +145,29 @@ a i {
      align-items: center;
      justify-content: center;
 }
+
+.pTitle{
+     background-color: #FF3F4F;
+     color:white !important;
+     min-height: 50px;
+     display: flex;
+     align-items: center;
+     margin-bottom: 30px;
+     font-weight: 500;
+     border-left: 10px solid black;
+}
+
+.card-header{
+     background-color: #212529;
+     color: white;
+}
+
+.btn-register{
+     border-left: 5px solid black;
+}
+
+.btn-register:hover{
+     border-left: 5px solid red;
+}
+
+

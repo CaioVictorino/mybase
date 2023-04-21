@@ -26,10 +26,10 @@ See the example bellow:
                'method' => 'methodExample',
                'access' => 'manager'
           ],
-          '/panel/dashboard' => [
+          '/admin/cliente' => [
                'class' => classController::class,
                'method' => 'methodExample',
-               'access' => 'costumer'
+               'access' => 'manager'
           ]
      ]
 
