@@ -38,8 +38,10 @@ In this example we create three routes passing the optional parameter access, yo
 </p>
 
 <p>
-<h4>Views</h4>
-The views files is inside on the path '/views', you can create your own structure of folders inside this path.
+<ul>
+     <li><h4>Views</h4></li>
+     <li>The views files is inside on the path '/views', you can create your own structure of folders inside this path.</li>
+</ul>
 </p>
 
 <p>
