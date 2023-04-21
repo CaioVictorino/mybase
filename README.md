@@ -31,7 +31,7 @@ See the example bellow:
                'class' => classController::class,
                'method' => 'methodExample',
                'access' => 'costumer'
-          ],
+          ]
      ]
 
 In this example we create three routes passing the optional parameter access, you can change it to be a require parameter if you need control the access on your routes.
