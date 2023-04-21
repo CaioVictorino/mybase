@@ -34,9 +34,12 @@ See the example bellow:
      ]
 
 In this example we create three routes passing the optional parameter access, you can change it to be a require parameter if you need control the access on your routes.
+<br>
 
 <h3>Views</h3>
 The views files is inside on the path '/views', you can create your own structure of folders inside this path.
+<br>
 
 <h3>Controllers</h3>
+
 The Controllers are in the path '/controllers', it is responsable to return to route system the informations about views or other processings.
