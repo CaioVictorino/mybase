@@ -1,12 +1,10 @@
-# My PHP Base (Under Construction)
+# 🌐 My PHP Base (Under Construction)
 
-<body style="width: 100% !important;">
+🚧 On Construction 🚧
 Base to my projects utilizing PHP
 
 
 <h4>Routes</h4>
-
-<p>
 Friendly route system using one route list file to manipulate register about URIs and other router file as a way to manipulate a request.
 The files about the route system is inside on the path '/routes'
 
@@ -35,18 +33,12 @@ See the example bellow:
      ]
 
 In this example we create three routes passing the optional parameter access, you can change it to be a require parameter if you need control the access on your routes.
-</p>
 
-<p>
-<ul style="list-style-type: none;">
-     <li><h4>Views</h4></li>
-     <li>The views files is inside on the path '/views', you can create your own structure of folders inside this path.</li>
-</ul>
-</p>
 
-<p>
+<h4>Views</h4>
+The views files is inside on the path '/views', you can create your own structure of folders inside this path.
+
+
+
 <h4>Controllers</h4>
 The Controllers are in the path '/controllers', it is responsable to return to route system the informations about views or other processings.
-</p>
-
-</body>
