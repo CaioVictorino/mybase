@@ -11,3 +11,5 @@ $pageData = $request->requester($uri);
 $pageClass = $pageData['class'];
 $pageMethod = $pageData['method'];
 $getPage = new $pageClass($pageMethod);
+
+return;

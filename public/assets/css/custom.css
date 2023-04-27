@@ -11,10 +11,20 @@
 html > * {
      font-family: 'Prompt', sans-serif !important;
      min-width: 360px !important;
+     max-height: 100% !important;
+}
+
+body {
+     max-height: 100% !important;
+     overflow-y: hidden;
+}
+
+aside{
 }
 
 .main-sidebar{
      background-color: white;
+     height: 100% !important;
 
 }
 
@@ -118,6 +128,8 @@ a i {
      */
      background-size: cover;
      background-repeat: no-repeat;
+     max-height: 70vh;
+     overflow-y: scroll;
 }
 
 .card-body{
@@ -169,5 +181,3 @@ a i {
 .btn-register:hover{
      border-left: 5px solid red;
 }
-
-

@@ -7,6 +7,8 @@ function getCep(cep){
           console.log(data);
           document.querySelector("#state").value = data.uf;
           document.querySelector("#city").value = data.localidade;
+          document.querySelector("#stateValue").value = data.uf;
+          document.querySelector("#cityValue").value = data.localidade;
           document.querySelector("#neighborhood").value = data.bairro;
           document.querySelector("#street").value = data.logradouro;
      });

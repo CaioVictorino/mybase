@@ -3,7 +3,7 @@
 <body class="sidebar-mini sidebar-collapse">
 
 <? require_once __DIR__.'/../snippets/topbar.php'; ?>
-<? require_once __DIR__.'/../snippets/sidebar.php'; ?>
+<? require_once __DIR__.'/../snippets/sidebar-admin.php'; ?>
 
 
 <div class="content-wrapper">
