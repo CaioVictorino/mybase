@@ -1,19 +1,20 @@
-<!-- Navbar -->
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
-
-  <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" id="toggleIcon" data-widget="pushmenu" href="#" role="button"><i class="fa-solid fa-right-left toggleBtn"></i></a>
-      </li>
-  </ul> 
-
-  <!-- Right navbar links -->
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a href="logout" class="nav-link" id="logoutIcon"  data-slide="true">
-        <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
-      </a>
-    </li>
-  </ul>
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <img class="img-fluid logo-topbar" src="<?php echo STORAGE."images/logo-koalabet.png"; ?>">
+    <button class="navbar-toggler navbar-btn-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="material-symbols-outlined">
+        menu
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Games</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
-<!-- /.navbar -->

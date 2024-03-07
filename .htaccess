@@ -1,0 +1,2 @@
+DirectoryIndex public/index.php public/index.html
+ErrorDocument 404 /public/index.php

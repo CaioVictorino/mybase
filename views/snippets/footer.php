@@ -1,7 +1,5 @@
-
-
-<script src="/assets/js/jquery.js"></script>
-<script src="/assets/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/adminlte.min.js"></script>
-<script src="/assets/js/icons.js"></script>
-<script src="/assets/js/datatable.js"></script>
+</body>
+<script src="<?php echo ASSET."js/jquery.js"?>"></script>
+<script src="<?php echo ASSET."js/propper.js"?>"></script>
+<script src="<?php echo ASSET."js/bootstrap.js"?>"></script>
+<script src="<?php echo ASSET."js/icons.js"?>"></script>
