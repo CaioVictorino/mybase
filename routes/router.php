@@ -1,21 +1,15 @@
-<?php 
+<?php
 
 namespace Routes;
 
 use Routes\routeList;
-     
 
-     class Router{
-          public function requester($uri)
-          {
-               $consult = new routeList();
-               $consulter = $consult->pathFinder($uri);
-               if(count(array($consulter)) <= 0){
-                    return;
-                    die;
-               }
 
-               return $consulter;
-          }
-     }
+class Router {
+    public function requester($uri){
+        $data = new RouteList;
+        $data = $data->List($uri);
 
+        return $data;
+    }
+}

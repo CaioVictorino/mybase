@@ -1,15 +1,25 @@
 <?php
 
-use Routes\Router;
+require "../autoload.php";
+require "../config.php";
 
-require_once "../autoload.php";
-require_once "../config.php";
+
+use Routes\Router;
+use Database\DatabaseConnection;
+
+
+$db = new DatabaseConnection;
+$db = $db->connect();
 
 $uri = $_SERVER['REQUEST_URI'];
-$request = new Router();
-$pageData = $request->requester($uri);
-$pageClass = $pageData['class'];
-$pageMethod = $pageData['method'];
-$getPage = new $pageClass($pageMethod);
+$router = new Router;
+$requester = $router->requester($uri);
+$data = $requester;
+
+
+$class = $data['class'];
+$method = $data['method'];
+$title = $data['title'];
+$loader = new $class($method, $title);
 
 return;

@@ -1,7 +1,7 @@
 <?php
 
+//ROUTES SHORTCUTS//
 define("BASE_DIR", __DIR__);
-define("ASSET", '\\public\\assets\\');
-define("STORAGE", '\\public\\storage\\');
-define("VIEW", BASE_DIR.'\\views\\');
-define("SNIPPETS", '\\views\\snippets\\');
+define("VIEW", BASE_DIR."/views");
+define("ASSET", BASE_DIR."/assets");
+define("STORAGE", BASE_DIR."/storage");

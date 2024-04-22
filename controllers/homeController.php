@@ -2,16 +2,14 @@
 
 namespace Controllers;
 
-class homeController{
-     public function __construct($method)
-     {
-          $this->$method();
-          return;
-     }
+class HomeController{
 
-     public function index()
-     {
-          require __DIR__.'/../views/home.php';
-          return;
-     }
+    public function __construct($method, $title)
+    {
+       $this->$method($title);
+    }
+
+    public function homeView($title){
+        require VIEW."/home.php";
+    }
 }
