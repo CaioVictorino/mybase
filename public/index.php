@@ -1,25 +1,20 @@
 <?php
 
-require "../autoload.php";
+require "../vendor/autoload.php";
 require "../config.php";
 
+use Resources\Objects\Router\Router;
 
-use Routes\Router;
-use Database\DatabaseConnection;
+/*
+echo "<pre>";
+print_r($_SERVER);
+echo "</pre>";
+*/
 
+$request = $_SERVER['REQUEST_URI'];
+$processUri = explode("?", $request);
+$baseUri = $processUri[0];
+$params = $_SERVER['QUERY_STRING'];
 
-$db = new DatabaseConnection;
-$db = $db->connect();
-
-$uri = $_SERVER['REQUEST_URI'];
-$router = new Router;
-$requester = $router->requester($uri);
-$data = $requester;
-
-
-$class = $data['class'];
-$method = $data['method'];
-$title = $data['title'];
-$loader = new $class($method, $title);
-
-return;
+$route = new Router;
+$result = $route->requestRoute($baseUri, $params);

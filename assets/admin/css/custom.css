@@ -1,0 +1,52 @@
+
+/*Sizes*/
+.w-5{
+    width: 5% !important;
+}
+
+.w-15{
+    width: 15% !important;
+}
+
+/*Admin Home*/
+.card-box{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 90%;
+    box-shadow: 0px 0px 10px gray;
+    position: relative;
+    height: 100% !important;
+    padding: 1rem;
+  }
+
+.card-hd{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon{
+    height: 100%;
+    font-size: 3rem !important;
+  }
+
+  .card-button{
+    position: relative !important;
+    bottom: 0;
+  }
+
+  /* Admin - Routes */
+
+  .card-box-form{
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "resources/objects",
+    "autoload": {
+        "psr-4": {
+            "Resources\\Objects\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Caio Victorino"
+        }
+    ],
+    "require": {}
+}
