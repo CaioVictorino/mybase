@@ -18,3 +18,4 @@ $params = $_SERVER['QUERY_STRING'];
 
 $route = new Router;
 $result = $route->requestRoute($baseUri, $params);
+$request = new $result['class']($result['method'], $result['title']);

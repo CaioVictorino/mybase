@@ -7,7 +7,7 @@ use PDO;
 
 class DatabaseConn
 {
-    private $dsn = "mysql:host=localhost;port=3306;dbname=mybase";
+    private $dsn = "mysql:host=127.0.0.1;port=3306;dbname=semecct";
     private $user = "root";
     private $password = "1234";
 
